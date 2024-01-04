@@ -8,6 +8,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.io.File;
+import java.io.IOException;
 
 
 public class BotSetup extends TelegramLongPollingBot {
@@ -17,12 +18,17 @@ public class BotSetup extends TelegramLongPollingBot {
         System.out.println(update.getMessage().getText());
         if(update.getMessage().getText().equalsIgnoreCase("/start")){
             sendMessage(update, "Welcome to Downtime Flyer Bot");
-            sendMessage(update, "Please use /Downtime with downtime in <FromTime - ToTime>_<OnDate> format");
+            sendMessage(update, "Please use format [/Downtime Application-Date-Time]");
         }
         if(update.getMessage().getText().toUpperCase().contains("/DOWNTIME")){
-            sendMessage(update, "Please wait untill we build your Flyer");
-            PptWriter.createPresentation();
-            File fileIn = new File("C:\\Users\\bhaye\\OneDrive\\Documents\\Flyer\\Daily Flyers\\"+ FileCopyWithDate.getFileNameWithDate("Template.pptx"));
+            sendMessage(update, "Please wait until we build your Flyer");
+            try {
+                PptWriter.createPresentation(update.getMessage().getText());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            String baseDirectory = System.getProperty("user.dir");
+            File fileIn = new File(baseDirectory+"\\Flyer\\Daily Flyers\\"+ FileCopyWithDate.getFileNameWithDate());
             SendDocument doc= new SendDocument();
             doc.setChatId(update.getMessage().getChatId().toString());
             doc.setDocument(new InputFile(fileIn));

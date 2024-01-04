@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dcddd64-5dc2-45fe-9baa-a6b65d92345d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/BotSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/FileCopyWithDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/PptWriter.java" afterDir="false" />
+    <list default="true" id="1dcddd64-5dc2-45fe-9baa-a6b65d92345d" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/MessageBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flyerbot/BotSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/BotSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flyerbot/FileCopyWithDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/FileCopyWithDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flyerbot/PptWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flyerbot/PptWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +42,14 @@
   "keyToString": {
     "Application.FileCopyWithDate.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.trial.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bhaye/.m2/repository/org/apache/poi/poi-ooxml/5.2.5/poi-ooxml-5.2.5.jar",
     "onboarding.tips.debug.path": "C:/Users/bhaye/IdeaProjects/FlyerBot/src/main/java/org/flyerbot/Main.java",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
@@ -86,9 +84,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="trial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.flyerbot.trial" />
+      <module name="FlyerBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.flyerbot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.trial" />
         <item itemvalue="Application.FileCopyWithDate" />
       </list>
     </recent_temporary>
@@ -109,6 +121,19 @@
       <option name="presentableId" value="Default" />
       <updated>1704304827235</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1704319183801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704319183801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>
